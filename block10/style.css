@@ -1,0 +1,115 @@
+main{
+    position: relative ;
+    margin-bottom: 2rem;
+}
+
+.picture {
+    position: relative;
+}
+
+.topRow{ 
+    display: flex;
+    height:100px ;
+    margin-bottom: 15px;
+}
+
+.topRow > div {
+    background: skyblue;
+    flex: 1;
+}
+.topRow > div:nth-child(2) {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.midRow{
+    height: 400px;
+    background-color: skyblue;
+    margin-bottom: 10px;
+}
+.bottomRow{
+    height: 20px;
+    background-color: yellowgreen;
+}
+
+.circle{
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+}
+.one {
+    width: 5vw;
+    height: 5vw;
+    background-color:pink;
+    left: 30%;
+top: 14%;
+}
+.two{
+    width: 3vw;
+    height: 3vw;
+    background-color: pink;
+    left: 38%;
+    top: 5%;
+
+}
+.three {
+    width: 5vw;
+    height: 5vw;
+    background-color:yellow;
+    left: 25%;
+    top: 4%;
+}
+.four {
+    width: 3vw;
+    height: 3vw;
+    background-color:yellow;
+    left: 20%;
+    top: 14%;
+}
+.five{
+    width: 3vw;
+    height: 3vw;
+    background-color:pink;
+    left: 55%;
+    top: 30%;
+}
+.triangle{
+    width: 0vw;
+    height:0vw ;
+    z-index: 2;
+    position: absolute;
+}
+.tri-one{
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 200px solid yellowgreen;
+    left: 50%;
+    top: 58%;
+    z-index: 3
+}
+.tri-two{
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 350px solid green;
+    left: 35%;
+    top: 30.5%;
+    z-index: 1;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5rem;
+    
+}
+.formInput{
+    margin: 1rem;
+    display:flex;
+    flex-direction: column;
+    width: 50%;
+    align-self: center;
+}
+.submitButton{
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 30%;
+    align-self: center;
+}
