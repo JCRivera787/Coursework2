@@ -1,19 +1,42 @@
-const dinner = {
-    cheeseburger: 12,
-    steak: 20,
-    soup: 8,
-    macnCheese: 14,
-    combo: 16,
-}
-console.log(Object.keys(dinner));
+const customer = {
+    firstName: "jake",
+    lastName: "smith",
+    email: "jaekSmih!aol.com",
+    phone: undefined,
+    zipCode: "631",
+    favoriteFlavors: 32,
+    cupSize: "medium",
+    favoriteStore: "Target",
+    firstVisit: false,
+};
 
-console.log(Object.values(dinner));
+//console.log(customer)
+//modify value notation.
+customer["email"] = "Jak3Smith1992@email.com";
 
-const prices = Object.values(dinner);
+customer["phone"] = 3195551234;
 
-let totalCost = 0;
-for (let i = 0; i < prices.length; i++) {
-    totalCost += prices[i];
-}
+customer["zipCode"] = "63132";
 
-console.log(totalCost)
+customer["favoriteFlavors"] = ["coffee", "strawberry", "matcha"];
+
+//console.log(customer)
+//delete key items
+
+delete customer.zipCode;
+
+delete customer.favoriteStore;
+
+//console.log(customer)
+//add new items
+
+customer["toppings"]=["chocolate sprinkles", "wafer straws",  "gummy bears"];
+
+customer["futureFlavors"]= "mago";
+
+customer["todaysPurchaseCost"]=5.32;
+//console.log(customer)
+//keys array
+const keysArray = Object.keys(customer);
+//keys array log
+console.log(keysArray)
